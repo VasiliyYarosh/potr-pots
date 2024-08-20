@@ -184,7 +184,7 @@ body, p, div {
 
 .features {
   padding: 0 27px;
-  width: 270px;
+  width: 100%;
 }
 .features__title {
   font-size: 58px;
