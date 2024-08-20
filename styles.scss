@@ -65,7 +65,7 @@ body, p, div {
         font-size: 36px;
         line-height: 43.2px;
         letter-spacing: 0.155em;
-        text-shadow: -0.68px 0 #03839E, 0 0.68px #03839E, 0.68px 0 #03839E, 0 -0.68px #03839E;
+        text-shadow: -1px 0 #03839E, 0 2px #03839E, 1px 0 #03839E, 0 -1px #03839E;
         color: white;
 
         &--span {
@@ -143,6 +143,7 @@ body, p, div {
 }
 
 .content {
+    position: relative;
     margin-bottom: 110px;
     padding: 0 30px;
 
@@ -176,8 +177,47 @@ body, p, div {
         line-height: 24px;
         color: #4F4F4F;
     }
+
+    &__additional {
+        position: relative;
+        &--text {
+            font-size: 12px;
+            line-height: 14.4px;
+            letter-spacing: 0.22em;
+            transform: rotate(450deg);
+            transform-origin: left top 0;
+            position: absolute;
+            right: -85px;
+            bottom: 130px;
+            color: #828282;
+        }
+
+        &--img {
+            position: absolute;
+            right: -17px;
+            bottom: 160px;
+        }
+    }
 }
 
 .features {
-    padding: 0 30px;
+    padding: 0 27px;
+    width: 270px;
+
+    &__title {
+        font-size: 58px;
+        line-height: 69.6px;
+        letter-spacing: 0.155em;
+        text-shadow: -1px 0 #03839E, 0 2px #03839E, 1px 0 #03839E, 0 -1px #03839E;
+        color: white;
+
+        &--span {
+            font-size: 58px;
+            line-height: 69.6px;
+            letter-spacing: 0.155em;
+            color: #03839E;
+            text-shadow: none;
+        }
+    }
+
 }
